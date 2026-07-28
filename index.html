@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rushikesh Patil — Data Engineer &amp; Software Engineer</title>
+    <meta name="description" content="Rushikesh Patil — Data Science undergraduate from India. Building open-source tools, OSINT engines and privacy tech.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-bar" class="scroll-bar"></div>
+
+    <!-- Noise texture overlay (light mode only) -->
+    <div class="noise-overlay"></div>
+
+    <!-- Cursor -->
+    <div id="cursor-glow" class="cursor-glow"></div>
+    <div id="custom-cursor" class="custom-cursor"></div>
+    <div id="custom-cursor-follower" class="custom-cursor-follower"></div>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="top-header" id="top-header">
+        <div class="logo"><span class="logo-text">Rushikesh</span></div>
+
+        <nav class="pill-nav">
+            <a href="#home" class="nav-link"><span class="nav-text" data-text="Home">Home</span><sup>01</sup></a>
+            <a href="#about" class="nav-link"><span class="nav-text" data-text="About">About</span><sup>02</sup></a>
+            <a href="#projects" class="nav-link"><span class="nav-text" data-text="Projects">Projects</span><sup>03</sup></a>
+            <a href="#expertise" class="nav-link"><span class="nav-text" data-text="Skills">Skills</span><sup>04</sup></a>
+            <a href="#research" class="nav-link"><span class="nav-text" data-text="Research">Research</span><sup>05</sup></a>
+        </nav>
+
+        <div class="header-actions">
+            <button id="theme-toggle" class="icon-btn" aria-label="Toggle Dark Mode">
+                <i class="ri-moon-line"></i>
+            </button>
+            <a href="#" id="connect-btn" class="connect-btn">
+                <span class="nav-text" data-text="Connect ↗">Connect ↗</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <main id="home" class="hero">
+        <!-- Ambient floating blobs -->
+        <div class="hero-blob blob-1"></div>
+        <div class="hero-blob blob-2"></div>
+
+
+
+        <!-- Big typography — Row 1: DATA … SCIENCE | Row 2: CYCLING + TOGGLE -->
+        <div class="huge-typography">
+            <!-- Row 1: DATA SCIENCE side by side -->
+            <div class="line hero-line-top reveal-line stack-up">
+                <span class="pixel-text">DATA</span>
+                <span class="hero-science">SCIENCE</span>
+            </div>
+            <div class="line hero-line-bottom reveal-line stack-up" style="--stack-delay:0.12s">
+                <span class="word-cycle" id="word-cycle">
+                    <span class="word-slide active highlight-orange">ENGINEER</span>
+                    <span class="word-slide highlight-orange">DEVELOPER</span>
+                </span>
+                <a href="javascript:void(0)" class="resume-toggle-btn">
+                    <div class="switch-track">
+                        <div class="switch-thumb"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- Hero bottom bar -->
+        <div class="hero-footer">
+            <div class="hero-roles">
+                <p class="role-title"><span class="highlight-orange font-bold">Software Engineer</span> &amp; <span class="highlight-orange font-bold">Privacy Researcher</span></p>
+                <p class="role-desc"><span class="dot"></span>Specialising in OSINT tools, scalable data pipelines &amp; open-source software.</p>
+            </div>
+            <div class="hero-right">
+                <div class="hero-intro">
+                    <p class="intro-greeting">Hi, I'm</p>
+                    <h1 class="intro-name">Rushikesh Patil.</h1>
+                    <!-- Resume pill button + avatar -->
+                    <div class="hero-intro-row">
+                        <div class="avatar-container">
+                            <img src="avatar.png" alt="Rushikesh Patil">
+                        </div>
+                    </div>
+                </div>
+                <!-- Stats row -->
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-num">4+</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">8+</span>
+                        <span class="stat-label">Tools</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-num">100%</span>
+                        <span class="stat-label">Open Source</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rotating stamp badge -->
+        <div class="rotating-badge">
+            <svg viewBox="0 0 180 180" width="150" height="150">
+                <defs>
+                    <path id="badgePath" d="M90,90 m-62,0 a62,62 0 1,1 124,0 a62,62 0 1,1 -124,0"/>
+                </defs>
+                <circle cx="90" cy="90" r="80" fill="var(--badge-bg)" stroke="var(--border)" stroke-width="1" stroke-dasharray="5 3"/>
+                <circle cx="90" cy="90" r="55" fill="var(--badge-inner)" stroke="var(--border)" stroke-width="1"/>
+                <circle cx="90" cy="90" r="48" fill="var(--badge-inner)" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="3 2"/>
+                <text x="90" y="82" text-anchor="middle" font-size="22" fill="var(--orange)">★</text>
+                <text x="90" y="97" text-anchor="middle" font-size="8.5" font-weight="800" font-family="Outfit,sans-serif" fill="var(--text)" letter-spacing="1">Cloud Enthusiast</text>
+                <text x="90" y="109" text-anchor="middle" font-size="7" font-family="Outfit,sans-serif" fill="var(--muted)" letter-spacing="0.5">BUILDER</text>
+                <text font-size="8.5" font-weight="700" font-family="Outfit,sans-serif" fill="var(--muted)" letter-spacing="2.5">
+                    <textPath href="#badgePath" startOffset="2%">✦ Rushikesh Patil · DATA SCIENCE · INDIA ✦</textPath>
+                </text>
+            </svg>
+        </div>
+
+        <!-- scroll hint removed -->
+    </main>
+
+    <!-- Marquee ticker -->
+    <div class="marquee-wrap">
+        <div class="marquee-track">
+            <span>Data Science</span><span class="marquee-dot">●</span>
+            <span>OSINT</span><span class="marquee-dot">●</span>
+            <span>Privacy Tech</span><span class="marquee-dot">●</span>
+            <span>Python</span><span class="marquee-dot">●</span>
+            <span>Open Source</span><span class="marquee-dot">●</span>
+            <span>JavaScript</span><span class="marquee-dot">●</span>
+            <span>SQL</span><span class="marquee-dot">●</span>
+            <span>Linux</span><span class="marquee-dot">●</span>
+            <span>Data Science</span><span class="marquee-dot">●</span>
+            <span>OSINT</span><span class="marquee-dot">●</span>
+            <span>Privacy Tech</span><span class="marquee-dot">●</span>
+            <span>Python</span><span class="marquee-dot">●</span>
+            <span>Open Source</span><span class="marquee-dot">●</span>
+            <span>JavaScript</span><span class="marquee-dot">●</span>
+            <span>SQL</span><span class="marquee-dot">●</span>
+            <span>Linux</span><span class="marquee-dot">●</span>
+        </div>
+    </div>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section id="about" class="about">
+        <div class="about-inner">
+            <div class="about-left stack-up">
+                <span class="section-tag">WHO I AM</span>
+                <h2 class="section-heading">About<br><em>Me</em></h2>
+                <div class="section-accent"></div>
+                <div class="about-avatar-big">
+                    <img src="avatar.png" alt="Rushikesh Patil">
+                    <div class="avatar-ring"></div>
+                </div>
+            </div>
+            <div class="about-right stack-up" style="--stack-delay:0.15s">
+                <p class="about-big-text">
+                    <span class="highlight-orange font-bold">I'm Rushikesh</span> — I build
+                    <span class="text-underline">privacy-first</span> tools and
+                    <span class="font-bold">open-source</span> software at the intersection
+                    of data science, OSINT 🔍 and systems engineering.
+                </p>
+                <p class="about-body">
+                    Focused on building real, deployable software — from intelligent data pipelines
+                    and OSINT engines to scalable APIs and privacy-respecting digital tools.
+                    Every project ships clean, documented, and open.
+                </p>
+                <!-- Tech stack quick-view -->
+                <div class="about-tech-stack">
+                    <span class="tech-label">STACK</span>
+                    <div class="tech-pills">
+                        <span class="tech-pill"><i class="ri-terminal-box-fill"></i> Python</span>
+                        <span class="tech-pill"><i class="ri-javascript-fill"></i> JS</span>
+                        <span class="tech-pill"><i class="ri-database-2-fill"></i> SQL</span>
+                        <span class="tech-pill"><i class="ri-ubuntu-fill"></i> Linux</span>
+                        <span class="tech-pill"><i class="ri-git-branch-fill"></i> Git</span>
+                        <span class="tech-pill"><i class="ri-shield-keyhole-line"></i> OSINT</span>
+                    </div>
+                </div>
+                <div class="about-tags" style="margin-top:20px;">
+                    <span class="tag">🐍 Python</span>
+                    <span class="tag">🔍 OSINT</span>
+                    <span class="tag">🧿 Privacy</span>
+                    <span class="tag">🌐 Open Source</span>
+                    <span class="tag">📊 Data</span>
+                </div>
+                <a href="#projects" class="about-cta">See my work <i class="ri-arrow-right-up-line"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== EXPERTISE ===================== -->
+    <section id="expertise" class="expertise">
+        <div class="section-header-row stack-up">
+            <span class="section-tag">MY SKILLS</span>
+            <h2 class="section-heading-center">Expertise</h2>
+            <div class="section-accent" style="margin: 10px auto 0;"></div>
+        </div>
+
+        <div class="expertise-grid">
+            <div class="expertise-card reveal stack-up" style="--stack-delay:0.05s">
+                <div class="expertise-card-top">
+                    <div class="exp-icon"><i class="ri-code-s-slash-line"></i></div>
+                    <div class="exp-num">01</div>
+                </div>
+                <h3>Software Development</h3>
+                <p>Python, JavaScript, C, C++, SQL — building scalable, efficient systems from the ground up.</p>
+                <div class="exp-tags">
+                    <span>Python</span><span>JavaScript</span><span>C++</span>
+                </div>
+            </div>
+            <div class="expertise-card reveal stack-up" style="--stack-delay:0.12s">
+                <div class="expertise-card-top">
+                    <div class="exp-icon"><i class="ri-shield-keyhole-line"></i></div>
+                    <div class="exp-num">02</div>
+                </div>
+                <h3>OSINT &amp; Privacy</h3>
+                <p>Building privacy-focused engines and digital footprint analysis tools for security researchers.</p>
+                <div class="exp-tags">
+                    <span>OSINT</span><span>Privacy</span><span>Research</span>
+                </div>
+            </div>
+            <div class="expertise-card reveal stack-up" style="--stack-delay:0.2s">
+                <div class="expertise-card-top">
+                    <div class="exp-icon"><i class="ri-bar-chart-box-line"></i></div>
+                    <div class="exp-num">03</div>
+                </div>
+                <h3>Data Science</h3>
+                <p>Data modeling, analysis and beautiful visualizations using Chart.js and modern pipelines.</p>
+                <div class="exp-tags">
+                    <span>Analysis</span><span>Chart.js</span><span>SQL</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tool circles -->
+        <div class="tools-section reveal stack-up" style="--stack-delay:0.1s">
+            <h3 class="tools-title">Tools I Use</h3>
+            <div class="tools-row">
+                <div class="tool-circle" data-name="Python" data-color="#3776AB"><i class="ri-terminal-box-fill"></i></div>
+                <div class="tool-circle" data-name="Git" data-color="#F44336"><i class="ri-git-branch-fill"></i></div>
+                <div class="tool-circle" data-name="HTML5" data-color="#FF5722"><i class="ri-html5-fill"></i></div>
+                <div class="tool-circle" data-name="CSS3" data-color="#2196F3"><i class="ri-css3-fill"></i></div>
+                <div class="tool-circle" data-name="JavaScript" data-color="#F7DF1E"><i class="ri-javascript-fill"></i></div>
+                <div class="tool-circle" data-name="Linux" data-color="#4CAF50"><i class="ri-ubuntu-fill"></i></div>
+                <div class="tool-circle" data-name="SQL / DB" data-color="#9C27B0"><i class="ri-database-2-fill"></i></div>
+                <div class="tool-circle" data-name="VS Code" data-color="#007ACC"><i class="ri-code-box-fill"></i></div>
+                <div class="tool-circle" data-name="Excel" data-color="#1D6F42"><i class="ri-file-excel-2-fill"></i></div>
+            </div>
+        </div>
+    </section>
+
+<!-- ===================== PROJECTS ===================== -->
+<section id="projects" class="works">
+
+    <div class="section-header-row stack-up">
+        <span class="section-tag">MY WORK</span>
+        <h2 class="section-heading-center">Projects</h2>
+        <p class="section-description">
+            From self-hosted infrastructure to AI-powered systems — a look at what I've been building.
+        </p>
+        <div class="section-accent" style="margin: 10px auto 0;"></div>
+    </div>
+
+    <!-- ============================================================
+         FEATURED PROJECT — CloudNest
+    ============================================================= -->
+    <div class="featured-project reveal stack-up" style="--stack-delay:0.05s">
+
+        <div class="featured-content">
+
+            <!-- Left Content -->
+            <div class="featured-left">
+
+                <span class="featured-kicker"><i class="ri-flashlight-line"></i> Featured Project</span>
+
+                <h3 class="featured-title">CloudNest — Self-Hosted Home Server</h3>
+
+                <p class="featured-description">
+                    A privacy-first home server built from the ground up on Ubuntu Server with LVM.
+                    CloudNest swaps everyday cloud services — storage, photo backup and DNS — for
+                    self-hosted, self-controlled alternatives, all managed through CasaOS.
+                </p>
+
+                <div class="featured-highlights">
+                    <div><i class="ri-database-2-line"></i> Private cloud storage &amp; sync with Nextcloud</div>
+                    <div><i class="ri-image-line"></i> Self-hosted photo &amp; video backup via Immich</div>
+                    <div><i class="ri-shield-check-line"></i> Network-wide ad &amp; tracker blocking with AdGuard Home</div>
+                    <div><i class="ri-global-line"></i> Encrypted DNS-over-HTTPS through a Cloudflare Tunnel</div>
+                </div>
+
+                <div class="featured-tech">
+                    <span>Ubuntu Server</span>
+                    <span>LVM</span>
+                    <span>CasaOS</span>
+                    <span>Nextcloud</span>
+                    <span>Immich</span>
+                    <span>AdGuard Home</span>
+                    <span>Cloudflare Tunnel</span>
+                    <span>ONLYOFFICE</span>
+                </div>
+
+                <div class="featured-buttons">
+                    <a href="javascript:void(0)" class="featured-btn">
+                        <i class="ri-lock-line"></i> Personal Infrastructure
+                    </a>
+                    <a href="javascript:void(0)" class="featured-btn secondary-btn">
+                        <i class="ri-tools-line"></i> ONLYOFFICE Workspace — In Progress
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Right Architecture Visual -->
+            <div class="featured-right">
+                <div class="cloudnest-visual">
+                    <div class="visual-glow glow-one"></div>
+                    <div class="visual-glow glow-two"></div>
+                    <div class="cloud-orbit orbit-one"></div>
+                    <div class="cloud-orbit orbit-two"></div>
+
+                    <div class="cloud-core">
+                        <i class="ri-cloud-line"></i>
+                        <span>CloudNest</span>
+                        <small>Home Server</small>
+                    </div>
+
+                    <div class="visual-chip chip-storage"><i class="ri-folder-2-line"></i> Nextcloud</div>
+                    <div class="visual-chip chip-security"><i class="ri-shield-check-line"></i> AdGuard</div>
+                    <div class="visual-chip chip-docker"><i class="ri-layout-grid-line"></i> CasaOS</div>
+                    <div class="visual-chip chip-status"><span class="status-dot"></span> Online</div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ============================================================
+         PROJECT GRID
+    ============================================================= -->
+    <div class="projects-grid">
+
+        <!-- ============================================================
+             Brain Tumor Detection
+        ============================================================= -->
+        <div class="project-card project-ai reveal stack-up" style="--stack-delay:0.12s">
+
+            <h3 class="project-title">
+                <i class="ri-brain-line"></i>
+                Brain Tumor Detection
+            </h3>
+
+            <p class="project-description">
+                Deep learning-powered MRI brain tumor detection system using transfer learning
+                for accurate classification and early diagnosis assistance. Built with an
+                end-to-end pipeline including model training, REST APIs and a responsive web interface.
+            </p>
+
+            <div class="project-tags">
+                <span>Python</span>
+                <span>TensorFlow</span>
+                <span>VGG16</span>
+                <span>Flask</span>
+                <span>React</span>
+            </div>
+
+            <div class="project-links">
+                <a href="#">
+                    Research Paper
+                    <i class="ri-file-paper-line"></i>
+                </a>
+
+                <a href="#">
+                    GitHub
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- ============================================================
+             Jarvis AI Assistant
+        ============================================================= -->
+        <div class="project-card reveal stack-up" style="--stack-delay:0.18s">
+
+            <h3 class="project-title">
+                <i class="ri-robot-line"></i>
+                Jarvis AI Assistant
+            </h3>
+
+            <p class="project-description">
+                An AI-powered virtual assistant that understands natural language, automates
+                everyday tasks, answers questions, and delivers an interactive conversational
+                experience using modern large language models.
+            </p>
+
+            <div class="project-tags">
+                <span>Python</span>
+                <span>FastAPI</span>
+                <span>Gemini</span>
+                <span>Speech Recognition</span>
+                <span>React</span>
+            </div>
+
+            <div class="project-links">
+                <a href="https://github.com/rkcodes05/jarvis-ai-assistant"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    GitHub
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- ============================================================
+             Gmail Phishing Detection
+        ============================================================= -->
+        <div class="project-card project-security reveal stack-up" style="--stack-delay:0.24s">
+
+            <h3 class="project-title">
+                <i class="ri-shield-keyhole-line"></i>
+                Gmail Phishing Detection
+            </h3>
+
+            <p class="project-description">
+                A machine learning-powered phishing detection system that analyses suspicious
+                emails, identifies malicious content, and helps protect users against
+                evolving phishing attacks.
+            </p>
+
+            <div class="project-tags">
+                <span>Python</span>
+                <span>Machine Learning</span>
+                <span>Scikit-learn</span>
+                <span>Flask</span>
+                <span>Cyber Security</span>
+            </div>
+
+            <div class="project-links">
+                <a href="#">
+                    GitHub
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- ============================================================
+             Admission Management System
+        ============================================================= -->
+        <div class="project-card project-education reveal stack-up" style="--stack-delay:0.30s">
+
+            <h3 class="project-title">
+                <i class="ri-graduation-cap-line"></i>
+                Admission Management System
+            </h3>
+
+            <p class="project-description">
+                A complete admission management platform that streamlines student registration,
+                document verification, merit list generation, and administrative workflows
+                for educational institutions.
+            </p>
+
+            <div class="project-tags">
+                <span>Python</span>
+                <span>MySQL</span>
+                <span>CustomTkinter</span>
+                <span>PyMySQL</span>
+                <span>ReportLab</span>
+            </div>
+
+            <div class="project-links">
+
+                <a href="#">
+                    Research Paper
+                    <i class="ri-file-paper-line"></i>
+                </a>
+
+                <a href="#">
+                    GitHub
+                    <i class="ri-arrow-right-up-line"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- ============================================================
+         FINAL YEAR PROJECT — COMING SOON
+    ============================================================= -->
+    <div class="coming-project reveal stack-up" style="--stack-delay:0.36s">
+
+        <div class="coming-project-content">
+            <span class="coming-kicker"><i class="ri-loader-4-line"></i> Coming Soon</span>
+
+            <h3>
+                Final Year Project
+            </h3>
+
+            <p>
+                Currently researching and designing my capstone project focused on
+                Artificial Intelligence, Cloud Computing and scalable software systems.
+                The project will be announced soon.
+            </p>
+
+            <div class="coming-tags">
+                <span>Artificial Intelligence</span>
+                <span>Cloud Computing</span>
+                <span>Research</span>
+                <span>Coming Soon</span>
+            </div>
+        </div>
+
+        <div class="coming-project-visual">
+            <i class="ri-rocket-2-line"></i>
+        </div>
+
+    </div>
+
+</section>
+<!-- ===================== RESEARCH & PUBLICATIONS ===================== -->
+<section id="research" class="experience">
+
+    <div class="section-header-row stack-up">
+        <span class="section-tag">Research</span>
+
+        <h2 class="section-heading-center">
+            Research & Publications
+        </h2>
+
+        <p class="section-description">
+            Peer-reviewed research publications in Artificial Intelligence,
+            Computer Vision, Deep Learning, Medical AI and Educational Technology.
+        </p>
+
+        <div class="section-accent" style="margin:10px auto 0;"></div>
+    </div>
+
+    <div class="timeline-container">
+
+<!-- ===================== PAPER 1 ===================== -->
+
+<div class="timeline-row reveal stack-up" style="--stack-delay:0.05s">
+
+    <div class="timeline-left">
+        <span class="timeline-date">2026</span>
+    </div>
+
+    <div class="timeline-center">
+        <div class="timeline-dot"></div>
+        <div class="timeline-line"></div>
+    </div>
+
+    <div class="timeline-right">
+
+        <div class="timeline-card">
+
+            <span class="timeline-tag">Published Research</span>
+
+            <h3>
+                Automated Brain Tumor Detection from MRI Images Using
+                Convolutional Neural Networks
+            </h3>
+
+            <div class="publication-status">
+                Peer-Reviewed Publication
+            </div>
+
+            <p>
+                Developed an end-to-end AI-powered brain tumor detection system
+                using the VGG16 deep learning architecture. Built a complete
+                pipeline consisting of model training, REST APIs with Flask &
+                FastAPI, and a React.js web application capable of delivering
+                accurate real-time MRI predictions.
+            </p>
+
+            <!-- ===================== Highlights ===================== -->
+
+            <div class="paper-section">
+
+                <h4>Highlights</h4>
+
+                <div class="highlights">
+
+                    <span>
+                        <i class="ri-award-line"></i>
+                        99% Classification Accuracy
+                    </span>
+
+                    <span>
+                        <i class="ri-brain-line"></i>
+                        Transfer Learning
+                    </span>
+
+                    <span>
+                        <i class="ri-code-box-line"></i>
+                        REST API Integration
+                    </span>
+
+                    <span>
+                        <i class="ri-pulse-line"></i>
+                        Real-time MRI Prediction
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- ===================== Technologies ===================== -->
+
+            <div class="paper-section">
+
+                <h4>Technologies</h4>
+
+                <div class="tech-stack">
+
+                    <span class="tech-pill">
+                        <i class="ri-code-s-slash-line"></i>
+                        Python
+                    </span>
+
+                    <span class="tech-pill">
+                        <i class="ri-cpu-line"></i>
+                        TensorFlow
+                    </span>
+
+                    <span class="tech-pill">
+                        <i class="ri-settings-3-line"></i>
+                        Keras
+                    </span>
+
+                    <span class="tech-pill">
+                        <i class="ri-focus-2-line"></i>
+                        VGG16
+                    </span>
+
+                    <span class="tech-pill">
+                        <i class="ri-rocket-line"></i>
+                        Flask
+                    </span>
+
+                    <span class="tech-pill">
+                        <i class="ri-flashlight-line"></i>
+                        FastAPI
+                    </span>
+
+                    <span class="tech-pill">
+                        <i class="ri-reactjs-line"></i>
+                        React.js
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- ===================== Button ===================== -->
+
+            <div class="paper-buttons">
+
+                <a href="#"
+                   target="_blank"
+                   class="paper-btn">
+
+                    View Publication
+                    <i class="ri-arrow-right-up-line"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ===================== PAPER 2 ===================== -->
+
+<div class="timeline-row reveal stack-up" style="--stack-delay:0.15s">
+
+    <div class="timeline-left">
+        <span class="timeline-date">2025</span>
+    </div>
+
+    <div class="timeline-center">
+        <div class="timeline-dot"></div>
+    </div>
+
+    <div class="timeline-right">
+
+        <div class="timeline-card">
+
+            <span class="timeline-tag">Published Research</span>
+
+            <h3>
+                Direct Second Year Diploma Admission
+                Management System Using Python
+            </h3>
+
+            <div class="publication-status">
+                Peer-Reviewed Publication
+            </div>
+
+            <p>
+                Designed and developed a comprehensive admission management
+                platform that digitizes student registration, eligibility
+                verification, document management, merit list generation and
+                administrative workflows, significantly improving efficiency,
+                transparency and reducing manual processing time.
+            </p>
+
+            <!-- ===================== Highlights ===================== -->
+
+            <div class="paper-section">
+
+                <h4>Highlights</h4>
+
+                <div class="highlights">
+
+                    <span>
+                        <i class="ri-settings-5-line"></i>
+                        Automated Admission Workflow
+                    </span>
+
+                    <span>
+                        <i class="ri-file-list-3-line"></i>
+                        Merit List Generation
+                    </span>
+
+                    <span>
+                        <i class="ri-shield-check-line"></i>
+                        Document Verification
+                    </span>
+
+                    <span>
+                      <i class="ri-dashboard-line"></i>
+                      Administrative Dashboard
+                    </span>
+                </div>
+
+            </div>
+
+            <!-- ===================== Technologies ===================== -->
+
+            <div class="paper-section">
+
+                <h4>Technologies</h4>
+
+                <div class="tech-stack">
+
+                    <span class="tech-pill">
+                        <i class="ri-code-s-slash-line"></i>
+                        Python
+                    </span>
+
+                    <span class="tech-pill">
+                        <i class="ri-database-2-line"></i>
+                        MySQL
+                    </span>
+
+                    <span class="tech-pill">
+                        <i class="ri-layout-grid-line"></i>
+                        CustomTkinter
+                    </span>
+
+                    <span class="tech-pill">
+                        <i class="ri-database-line"></i>
+                        PyMySQL
+                    </span>
+
+                    <span class="tech-pill">
+                        <i class="ri-file-pdf-2-line"></i>
+                        ReportLab
+                    </span>
+
+                </div>
+
+            </div>
+
+            <!-- ===================== Button ===================== -->
+
+            <div class="paper-buttons">
+
+                <a href="#"
+                   target="_blank"
+                   class="paper-btn">
+
+                    View Publication
+                    <i class="ri-arrow-right-up-line"></i>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+        <!-- ===================== FUTURE RESEARCH ===================== -->
+
+        <div class="timeline-row reveal stack-up" style="--stack-delay:0.25s">
+
+            <div class="timeline-left">
+                <span class="timeline-date">Next</span>
+            </div>
+
+            <div class="timeline-center">
+                <div class="timeline-dot timeline-dot-future"></div>
+            </div>
+
+            <div class="timeline-right">
+
+                <div class="timeline-card timeline-card-future">
+
+                    <span class="timeline-tag timeline-tag-future">
+                        🚀 Research in Progress
+                    </span>
+
+                    <h3>
+                        Future Publications
+                    </h3>
+
+                    <p>
+                        Currently working on innovative research in Artificial
+                        Intelligence, Machine Learning, Computer Vision,
+                        Large Language Models and intelligent software systems,
+                        with future publications planned in peer-reviewed journals.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="bottom-footer">
+        <div class="footer-top stack-up">
+            <h2 class="footer-huge footer-huge-wide">
+                LET'S BUILD<br><em class="highlight-orange">SOMETHING</em><br>TOGETHER
+            </h2>
+            <div class="footer-email-display">
+                <i class="ri-mail-line"></i>
+                <a href="mailto:rushikeshh.dev@gmail.com" class="footer-email-text">rushikeshh.dev@gmail.com</a>
+            </div>
+            <a href="mailto:rushikeshh.dev@gmail.com" class="big-contact-btn">
+                Get In Touch <i class="ri-arrow-right-up-line"></i>
+            </a>
+        </div>
+
+        <div class="footer-meta">
+            <div class="socials">
+                <a href="https://github.com/rkcodes05" target="_blank"><i class="ri-github-fill"></i> GitHub</a>
+                <a href="https://linkedin.com/in/rushikeshpatil23" target="_blank"><i class="ri-linkedin-fill"></i> LinkedIn</a>
+                <a href="mailto:rushikeshh.dev@gmail.com"><i class="ri-mail-line"></i> Email</a>
+            </div>
+            <!-- Copyright + cat in a flex row -->
+            <div class="footer-credit-row">
+                <div class="copyright">© 2026 Rushikesh Patil · Made with ❤️</div>
+                <!-- Sitting cat to the right of "made with love" -->
+                <div class="footer-cat-wrap">
+                    <div class="cat-scene">
+                        <svg class="cat-svg" viewBox="0 0 130 110" width="90" height="70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Shadow -->
+                            <ellipse cx="63" cy="105" rx="34" ry="4" fill="rgba(0,0,0,0.08)"/>
+                            <!-- Tail curved around body (sitting) -->
+                            <path class="cat-tail" d="M88 90 Q108 95 110 80 Q112 66 96 62" stroke="#3d4466" stroke-width="10" stroke-linecap="round" fill="none"/>
+                            <!-- Body (sitting — taller, rounder) -->
+                            <ellipse cx="58" cy="82" rx="32" ry="26" fill="#3d4466"/>
+                            <!-- Belly -->
+                            <ellipse cx="58" cy="88" rx="16" ry="16" fill="#c8cfe8"/>
+                            <!-- Head -->
+                            <ellipse cx="58" cy="50" rx="28" ry="26" fill="#3d4466"/>
+                            <!-- Ears -->
+                            <polygon points="32,34 26,12 46,28" fill="#3d4466"/>
+                            <polygon points="33,32 28,15 44,27" fill="#ffb3c6"/>
+                            <polygon points="84,34 90,12 70,28" fill="#3d4466"/>
+                            <polygon points="83,32 88,15 72,27" fill="#ffb3c6"/>
+                            <!-- Eyes -->
+                            <ellipse cx="46" cy="48" rx="7" ry="8" fill="white"/>
+                            <ellipse cx="70" cy="48" rx="7" ry="8" fill="white"/>
+                            <ellipse class="cat-pupil-l" cx="46" cy="49" rx="4" ry="5" fill="#1a1a2e"/>
+                            <ellipse class="cat-pupil-r" cx="70" cy="49" rx="4" ry="5" fill="#1a1a2e"/>
+                            <circle cx="47" cy="47" r="1.5" fill="white"/>
+                            <circle cx="71" cy="47" r="1.5" fill="white"/>
+                            <!-- Nose -->
+                            <polygon points="58,58 54,62 62,62" fill="#ff8fab"/>
+                            <!-- Mouth -->
+                            <path d="M54 62 Q58 67 62 62" stroke="#5a5a7a" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+                            <!-- Whiskers left -->
+                            <line x1="20" y1="56" x2="48" y2="59" stroke="#aaa" stroke-width="1.2" stroke-linecap="round"/>
+                            <line x1="18" y1="61" x2="48" y2="62" stroke="#aaa" stroke-width="1.2" stroke-linecap="round"/>
+                            <!-- Whiskers right -->
+                            <line x1="96" y1="56" x2="68" y2="59" stroke="#aaa" stroke-width="1.2" stroke-linecap="round"/>
+                            <line x1="98" y1="61" x2="68" y2="62" stroke="#aaa" stroke-width="1.2" stroke-linecap="round"/>
+                            <!-- Front paws (sitting, tucked in front) -->
+                            <ellipse cx="46" cy="104" rx="11" ry="6" fill="#3d4466"/>
+                            <ellipse cx="70" cy="104" rx="11" ry="6" fill="#3d4466"/>
+                            <!-- Paw toes left -->
+                            <ellipse cx="40" cy="102" rx="3.5" ry="2.5" fill="#2d3356"/>
+                            <ellipse cx="46" cy="100" rx="3.5" ry="2.5" fill="#2d3356"/>
+                            <ellipse cx="52" cy="102" rx="3.5" ry="2.5" fill="#2d3356"/>
+                            <!-- Paw toes right -->
+                            <ellipse cx="64" cy="102" rx="3.5" ry="2.5" fill="#2d3356"/>
+                            <ellipse cx="70" cy="100" rx="3.5" ry="2.5" fill="#2d3356"/>
+                            <ellipse cx="76" cy="102" rx="3.5" ry="2.5" fill="#2d3356"/>
+                        </svg>
+                        <div class="cat-speech">Meow! 🐾</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating game button -->
+    <button id="open-game-btn" class="floating-game-btn" aria-label="Play Snake">
+        <i class="ri-gamepad-line"></i>
+        <span class="game-tooltip">Play Snake 🐍</span>
+    </button>
+
+    <!-- ===================== CONNECT MODAL ===================== -->
+    <div id="connect-modal" class="modal-overlay">
+        <div class="connect-banner">
+            <div class="connect-left">
+                <div class="connect-pill pill-a"><i class="ri-smartphone-line"></i> Mobile Dev</div>
+                <div class="connect-pill pill-b"><i class="ri-shield-keyhole-line"></i> OSINT</div>
+                <div class="connect-pill pill-c"><i class="ri-bar-chart-box-line"></i> Data Science</div>
+                <div class="connect-pill pill-d"><i class="ri-code-s-slash-line"></i> Open Source</div>
+                <div class="connect-pill pill-you">You 👋</div>
+            </div>
+            <div class="connect-right">
+                <h2>Let's build<br>something <span class="highlight-orange">great</span>!</h2>
+                <p>Open for internships, collaborations and open-source projects.</p>
+                <div class="connect-actions">
+                    <a href="mailto:rushikeshh.dev@gmail.com" class="connect-action-btn primary">Send Email</a>
+                    <a href="https://linkedin.com/in/rushikeshpatil23" target="_blank" class="connect-action-btn linkedin"><i class="ri-linkedin-fill"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===================== SNAKE GAME MODAL ===================== -->
+    <div id="game-modal" class="modal-overlay">
+        <div class="game-container">
+            <!-- Attractive game header -->
+            <div class="game-attract-banner">
+                <div class="game-attract-icon">🐍</div>
+                <div class="game-attract-text">
+                    <h2 class="game-title">Snake Classic</h2>
+                    <p class="game-subtitle">Can you beat the high score?</p>
+                </div>
+                <button id="close-game" class="game-btn game-close" aria-label="Close"><i class="ri-close-line"></i></button>
+            </div>
+
+            <div class="game-score-bar">
+                <div class="game-score-item">
+                    <span class="game-score-label">SCORE</span>
+                    <span id="game-score" class="game-score-value">0</span>
+                </div>
+                <div class="game-score-divider"></div>
+                <div class="game-score-item">
+                    <span class="game-score-label">BEST</span>
+                    <span id="game-best" class="game-score-value">0</span>
+                </div>
+                <div class="game-controls">
+                    <button id="pause-game-btn" class="game-btn" title="Pause"><i class="ri-pause-line"></i></button>
+                    <button id="restart-game-btn" class="game-btn" title="Restart"><i class="ri-restart-line"></i></button>
+                </div>
+            </div>
+
+            <div class="game-hint">Arrow keys / WASD to move &nbsp;·&nbsp; Space = pause &nbsp;·&nbsp; ESC = close</div>
+            <div id="game-over-text" class="game-over hidden">
+                <span class="game-over-emoji">💀</span>
+                Game Over!&nbsp;&nbsp;<span id="final-score"></span>
+                <button class="game-over-retry" onclick="document.getElementById('restart-game-btn').click()">Play Again ↩</button>
+            </div>
+            <canvas id="snake-canvas" width="320" height="320"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
