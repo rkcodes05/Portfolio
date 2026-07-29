@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rushikesh Patil — Data Engineer &amp; Software Engineer</title>
     <meta name="description" content="Rushikesh Patil — Data Science undergraduate from India. Building open-source tools, OSINT engines and privacy tech.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="avatar-new.jpeg">
+    <link rel="apple-touch-icon" href="avatar-new.jpeg">
+
+    <!-- Open Graph / Social sharing -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Rushikesh Patil — Data Engineer & Software Engineer">
+    <meta property="og:description" content="Data Science undergraduate from India. Building open-source tools, OSINT engines and privacy tech.">
+    <meta property="og:image" content="avatar-new.jpeg">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Rushikesh Patil — Data Engineer & Software Engineer">
+    <meta name="twitter:description" content="Data Science undergraduate from India. Building open-source tools, OSINT engines and privacy tech.">
+    <meta name="twitter:image" content="avatar-new.jpeg">
+    <meta name="theme-color" content="#ff5722">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;700;800;900&display=swap" rel="stylesheet">
@@ -43,8 +59,24 @@
             <a href="#" id="connect-btn" class="connect-btn">
                 <span class="nav-text" data-text="Connect ↗">Connect ↗</span>
             </a>
+            <button id="mobile-menu-btn" class="icon-btn mobile-menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav">
+                <i class="ri-menu-line"></i>
+            </button>
         </div>
     </header>
+
+    <!-- ===================== MOBILE NAV DRAWER ===================== -->
+    <div id="mobile-nav-overlay" class="mobile-nav-overlay"></div>
+    <nav id="mobile-nav" class="mobile-nav">
+        <button id="mobile-menu-close" class="icon-btn" aria-label="Close menu">
+            <i class="ri-close-line"></i>
+        </button>
+        <a href="#home" class="mobile-nav-link"><span>01</span> Home</a>
+        <a href="#about" class="mobile-nav-link"><span>02</span> About</a>
+        <a href="#projects" class="mobile-nav-link"><span>03</span> Projects</a>
+        <a href="#expertise" class="mobile-nav-link"><span>04</span> Skills</a>
+        <a href="#research" class="mobile-nav-link"><span>05</span> Research</a>
+    </nav>
 
     <!-- ===================== HERO ===================== -->
     <main id="home" class="hero">
@@ -66,7 +98,7 @@
                     <span class="word-slide active highlight-orange">ENGINEER</span>
                     <span class="word-slide highlight-orange">DEVELOPER</span>
                 </span>
-                <a href="javascript:void(0)" class="resume-toggle-btn">
+                <a href="resume.pdf" target="_blank" rel="noopener noreferrer" class="resume-toggle-btn" aria-label="View resume (opens in a new tab)">
                     <div class="switch-track">
                         <div class="switch-thumb"></div>
                     </div>
@@ -87,14 +119,14 @@
                     <!-- Resume pill button + avatar -->
                     <div class="hero-intro-row">
                         <div class="avatar-container">
-                            <img src="avatar.png" alt="Rushikesh Patil">
+                            <img src="avatar-new.jpeg" alt="Rushikesh Patil">
                         </div>
                     </div>
                 </div>
                 <!-- Stats row -->
                 <div class="hero-stats">
                     <div class="stat-item">
-                        <span class="stat-num">4+</span>
+                        <span class="stat-num">3+</span>
                         <span class="stat-label">Projects</span>
                     </div>
                     <div class="stat-divider"></div>
@@ -121,7 +153,7 @@
                 <circle cx="90" cy="90" r="55" fill="var(--badge-inner)" stroke="var(--border)" stroke-width="1"/>
                 <circle cx="90" cy="90" r="48" fill="var(--badge-inner)" stroke="var(--border)" stroke-width="0.5" stroke-dasharray="3 2"/>
                 <text x="90" y="82" text-anchor="middle" font-size="22" fill="var(--orange)">★</text>
-                <text x="90" y="97" text-anchor="middle" font-size="8.5" font-weight="800" font-family="Outfit,sans-serif" fill="var(--text)" letter-spacing="1">Cloud Enthusiast</text>
+                <text x="90" y="97" text-anchor="middle" font-size="8.5" font-weight="800" font-family="Outfit,sans-serif" fill="var(--text)" letter-spacing="1">OPEN SOURCE</text>
                 <text x="90" y="109" text-anchor="middle" font-size="7" font-family="Outfit,sans-serif" fill="var(--muted)" letter-spacing="0.5">BUILDER</text>
                 <text font-size="8.5" font-weight="700" font-family="Outfit,sans-serif" fill="var(--muted)" letter-spacing="2.5">
                     <textPath href="#badgePath" startOffset="2%">✦ Rushikesh Patil · DATA SCIENCE · INDIA ✦</textPath>
@@ -162,7 +194,7 @@
                 <h2 class="section-heading">About<br><em>Me</em></h2>
                 <div class="section-accent"></div>
                 <div class="about-avatar-big">
-                    <img src="avatar.png" alt="Rushikesh Patil">
+                    <img src="avatar-new.jpeg" alt="Rushikesh Patil">
                     <div class="avatar-ring"></div>
                 </div>
             </div>
@@ -865,9 +897,9 @@
             </h2>
             <div class="footer-email-display">
                 <i class="ri-mail-line"></i>
-                <a href="mailto:rushikeshh.dev@gmail.com" class="footer-email-text">rushikeshh.dev@gmail.com</a>
+                <a href="mailto:patilrushikesh2302@gmail.com" class="footer-email-text">patilrushikesh2302@gmail.com</a>
             </div>
-            <a href="mailto:rushikeshh.dev@gmail.com" class="big-contact-btn">
+            <a href="mailto:patilrushikesh2302@gmail.com" class="big-contact-btn">
                 Get In Touch <i class="ri-arrow-right-up-line"></i>
             </a>
         </div>
@@ -876,7 +908,7 @@
             <div class="socials">
                 <a href="https://github.com/rkcodes05" target="_blank"><i class="ri-github-fill"></i> GitHub</a>
                 <a href="https://linkedin.com/in/rushikeshpatil23" target="_blank"><i class="ri-linkedin-fill"></i> LinkedIn</a>
-                <a href="mailto:rushikeshh.dev@gmail.com"><i class="ri-mail-line"></i> Email</a>
+                <a href="mailto:patilrushikesh2302@gmail.com"><i class="ri-mail-line"></i> Email</a>
             </div>
             <!-- Copyright + cat in a flex row -->
             <div class="footer-credit-row">
@@ -956,7 +988,7 @@
                 <h2>Let's build<br>something <span class="highlight-orange">great</span>!</h2>
                 <p>Open for internships, collaborations and open-source projects.</p>
                 <div class="connect-actions">
-                    <a href="mailto:rushikeshh.dev@gmail.com" class="connect-action-btn primary">Send Email</a>
+                    <a href="mailto:patilrushikesh2302@gmail.com" class="connect-action-btn primary">Send Email</a>
                     <a href="https://linkedin.com/in/rushikeshpatil23" target="_blank" class="connect-action-btn linkedin"><i class="ri-linkedin-fill"></i></a>
                 </div>
             </div>

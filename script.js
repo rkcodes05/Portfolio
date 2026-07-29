@@ -86,6 +86,7 @@ window.addEventListener('load', () => {
     if (container) {
         const words = container.querySelectorAll('.word-slide');
         let current = 0;
+        let wordTicker;
 
         const updateWidths = () => {
             let maxW = 0;
@@ -110,7 +111,7 @@ window.addEventListener('load', () => {
         words[0].classList.add('active');
         words[0].style.position = 'relative';
 
-        setInterval(() => {
+        function advanceWord() {
             const prev = current;
             current = (current + 1) % words.length;
 
@@ -127,7 +128,13 @@ window.addEventListener('load', () => {
                     words[current].classList.add('active');
                 });
             });
-        }, 2200);
+        }
+
+        function startWordTicker() {
+            clearInterval(wordTicker);
+            wordTicker = setInterval(advanceWord, 2200);
+        }
+        startWordTicker();
     }
 });
 
@@ -269,6 +276,37 @@ document.querySelectorAll('.stack-up:not(.reveal)').forEach(el => {
         el.style.animationPlayState = 'paused';
         stackObs.observe(el);
     }
+});
+
+// ================================================================
+// MOBILE NAV DRAWER
+// ================================================================
+const mobileMenuBtn   = document.getElementById('mobile-menu-btn');
+const mobileMenuClose = document.getElementById('mobile-menu-close');
+const mobileNav        = document.getElementById('mobile-nav');
+const mobileNavOverlay = document.getElementById('mobile-nav-overlay');
+
+function openMobileNav() {
+    mobileNav?.classList.add('active');
+    mobileNavOverlay?.classList.add('active');
+    mobileMenuBtn?.setAttribute('aria-expanded', 'true');
+    body.style.overflow = 'hidden';
+}
+function closeMobileNav() {
+    mobileNav?.classList.remove('active');
+    mobileNavOverlay?.classList.remove('active');
+    mobileMenuBtn?.setAttribute('aria-expanded', 'false');
+    body.style.overflow = '';
+}
+
+mobileMenuBtn?.addEventListener('click', openMobileNav);
+mobileMenuClose?.addEventListener('click', closeMobileNav);
+mobileNavOverlay?.addEventListener('click', closeMobileNav);
+mobileNav?.querySelectorAll('.mobile-nav-link').forEach(a => {
+    a.addEventListener('click', closeMobileNav);
+});
+document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && mobileNav?.classList.contains('active')) closeMobileNav();
 });
 
 // ================================================================
