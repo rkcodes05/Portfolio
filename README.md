@@ -2,8 +2,7 @@
 
 My personal portfolio built with plain HTML, CSS, and JavaScript to showcase my projects, skills, and background as an AI & Data Science engineering student.
 
-🔗 **Live site:** [add your deployed link here]
-
+🔗 **Live site:** https://rushikesh.pages.dev
 ## About
 
 I'm Rushikesh Patil (RK), a final-year B.E. student in Artificial Intelligence & Data Science at SPPU, Nashik. This site is where I put together my projects, skills, and experience — I'm currently aiming for fresher-level roles in DevOps/SRE and Cloud Engineering.
@@ -26,8 +25,6 @@ I'm Rushikesh Patil (RK), a final-year B.E. student in Artificial Intelligence &
 - **Sage AI** — a Jarvis-style voice-controlled desktop assistant built in Python
 - **Diploma Admission Management System** — desktop admission management app
 - **CloudNest** — self-hosted home server project
-
-*(Update this list / links to match what's actually featured on the site.)*
 
 ## Getting Started
 
@@ -60,8 +57,6 @@ Portfolio/
 │   └── (images, icons, etc.)
 └── README.md
 ```
-
-*(Adjust this to match your actual folder layout.)*
 
 ## Contact
 
