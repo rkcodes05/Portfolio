@@ -137,11 +137,16 @@ window.addEventListener('load', () => {
         startWordTicker();
     }
 
-    // ---- Resume Pill Toggle (Move on click) ----
+    // ---- Resume Pill Toggle (Move on click + open drive link) ----
     const resumeBtn = document.querySelector('.resume-toggle-btn');
     if (resumeBtn) {
-        resumeBtn.addEventListener('click', () => {
+        resumeBtn.addEventListener('click', (e) => {
             resumeBtn.classList.toggle('toggled');
+            const url = resumeBtn.getAttribute('href');
+            if (url && url !== '#') {
+                e.preventDefault();
+                window.open(url, '_blank', 'noopener,noreferrer');
+            }
         });
     }
 });

@@ -330,10 +330,7 @@ body::before {
     gap: 0.18em !important;   /* normal word spacing, no huge spread */
     justify-content: flex-start;
 }
-/* SCIENCE sits naturally after DATA */
-.hero-science {
-    /* inherits font from .line, no extra margin */
-}
+/* SCIENCE sits naturally after DATA (inherits styling from .line) */
 
 /* Row 2: cycling word + toggle, left-aligned, aligned center */
 .hero-line-bottom {
@@ -492,9 +489,6 @@ body::before {
         inset 0  2px  4px rgba(255,255,255,1),
         inset 0 -1px  3px rgba(0,0,0,.2);
     transition: transform 0.42s cubic-bezier(.175,.885,.32,1.275);
-}
-.resume-toggle-btn:hover .switch-thumb {
-    transform: translateY(-50%) translateX(-100%);
 }
 
 
