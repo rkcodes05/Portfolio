@@ -136,6 +136,14 @@ window.addEventListener('load', () => {
         }
         startWordTicker();
     }
+
+    // ---- Resume Pill Toggle (Move on click) ----
+    const resumeBtn = document.querySelector('.resume-toggle-btn');
+    if (resumeBtn) {
+        resumeBtn.addEventListener('click', () => {
+            resumeBtn.classList.toggle('toggled');
+        });
+    }
 });
 
 // ================================================================
